@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import Blogs from "./Blogs";
 //import AddBlog from "./AddBlog";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
                 <button className="btn" style={{marginLeft:"700%"}}>Add Post</button>
                 </Link>
             </div>
+            
            
             </div>
         </Fragment>
