@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+
+.navbar{
+  padding: 0.7rem 2rem;
+  background-color: #043a5a;
+  color: #f4f4f4;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn {
+  display: inline-block;
+  background: #043a5a;
+  color:#f4f4f4;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+    margin-top:1rem;
+      }
+    .btn:hover{
+    opacity: 0.9;
   }
+
+  /*add blog*/
+.addblog h1{
+  color:#043a5a ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form input[type=text], input[type=textarea]{
+  border:none;
+   height: 2.5rem;
+  font-size:1.2rem;
+  border-bottom: solid 1px gray;
+  margin-top:2rem;
+}
+form input[type=text]:focus, input[type=textarea]:focus  {
+  outline: none !important;
+  border-bottom:1px solid #043a5a ;   
+}
+
+form input[type=textarea]{
+  margin-top:20rem;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  position: relative;
+   }
+   
+.addblog{
+  max-width: 30rem;
+  margin: auto;
+  margin-top: 3rem;
 
-.App-link {
-  color: #61dafb;
-}
+  }
+ 
+  
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
