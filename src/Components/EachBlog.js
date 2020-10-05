@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import BlogContext from '../context/blogContext';
 
 
 const EachBlog = ({blog}) => {
+  const {removeBlog} = useContext(BlogContext)
   const {id, title, description} = blog;
+
+  const handleRemove = () =>{
+    removeBlog(id)
+  }
   return (
     <div className="guest-card">
     <div className="card-head">
@@ -10,9 +16,9 @@ const EachBlog = ({blog}) => {
       
       <div>
         <button>
-          <i className="fas fa-user-edit"></i>
+          <i  className="fa fa-pencil-square-o"></i>
         </button>
-        <button>
+        <button onClick={handleRemove}>
           <i className="fas fa-trash-alt remove"></i>
         </button>
       </div>
