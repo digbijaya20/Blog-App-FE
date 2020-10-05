@@ -4,7 +4,8 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className="navbar">
-                <h1>Blog</h1>
+                <h1 style={{marginLeft:"20px"}}><i className='fa fa-pencil' />
+                    Blog</h1>
             </div>
         </Fragment>
     )

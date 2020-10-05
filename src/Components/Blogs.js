@@ -6,7 +6,7 @@ import EachBlog from './EachBlog'
 const Blogs = () => {
   const {blogs} = useContext(BlogContext)
   return (
-    <div className="" >
+    <div className="blogs" >
       {blogs.map(blog => <EachBlog key={blog.id} blog={blog}/>)}
     </div>
   )

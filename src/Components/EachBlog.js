@@ -3,7 +3,7 @@ import BlogContext from '../context/blogContext';
 
 
 const EachBlog = ({blog}) => {
-  const {removeBlog} = useContext(BlogContext)
+  const {removeBlog, editBlog} = useContext(BlogContext)
   const {id, title, description} = blog;
 
   const handleRemove = () =>{
@@ -15,7 +15,7 @@ const EachBlog = ({blog}) => {
         <div></div>
       
       <div>
-        <button>
+        <button onClick={() => editBlog(blog)}>
           <i  className="fa fa-pencil-square-o"></i>
         </button>
         <button onClick={handleRemove}>
