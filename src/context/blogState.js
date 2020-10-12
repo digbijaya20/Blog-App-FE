@@ -11,7 +11,7 @@ const BlogState = (props) =>{
         blogs:[
             {
                 id: 1,
-                title: "ditu",
+                title: "CSK Vs KKR",
                 description:"Young Indian players can learn a lot from Andre Russell - Manoj Tiwary Young Indian players can learn a lot from Andre Russell - Manoj Tiwary TweetShareCopy URL So, KKR have something on the right most column in the points table. SRH still have a binary reading. They floundered it against RCB and today were slow off the blocks. "
             },
           

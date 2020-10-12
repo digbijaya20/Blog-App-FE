@@ -9,7 +9,7 @@ const Home = () => {
             <div className="main">
             <div>
                 <Link to='/addpost'>
-                <button className="btn" style={{marginLeft:"700%"}}>Add Post</button>
+                <button className="btn" style={{marginLeft:"-500px"}}>Add Post</button>
                 </Link>
             </div>
             
